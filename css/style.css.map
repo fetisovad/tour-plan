@@ -5,7 +5,8 @@
         "../sass/style.sass",
         "../sass/_setting.sass",
         "../sass/_null.scss",
-        "../sass/_header.sass"
+        "../sass/_header.sass",
+        "../sass/_variables.sass"
     ],
     "names": [],
     "file": "style.css"
