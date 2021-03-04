@@ -1,15 +1,25 @@
 .header
   background-color: #ffffff
 
-.header-top
+.navbar-top
   display: flex
   align-items: center
   justify-content: space-between
   padding: 40px 0
 .logo
+  width: 177px
 
-.header__search-form
-  margin-left: 108px
+.menu-button
+  display: none
+  background-color: $light
+  height: 11px
+  padding: 0
+  border: none
+  cursor: pointer
+  &__line
+    width: 16px
+    height: 1px
+    background-color: $text-color
 
 .search
   display: flex
@@ -17,11 +27,12 @@
   height: 40px
   border-radius: 6px
   overflow: hidden
-  margin-right: auto
   &__input
-    border: none
+    outline: none
     width: 350px
+    border: none
     background-color: #f5fafe
+    // padding: 12px 75px 12px 23px
     padding-left: 23px
     padding-right: 75px
     height: 100%
@@ -29,6 +40,10 @@
     font-size: 12px
     line-height: 15px
     font-weight: 400
+    &::placeholder
+      color: $text-color
+      font-size: 12px
+      line-height: 15px
   &__button
     position: absolute
     right: 0
@@ -36,7 +51,10 @@
     width: 65px
     background-color: $primary
     border: none
-  &__icon
+
+.navbar__search-form
+  margin-left: 108px
+  margin-right: auto
 
 .user
   display: flex
@@ -52,3 +70,22 @@
     font-size: 14px
     line-height: 18px
     color: $text-color
+
+.navbar-bottom
+  background-color: $dark
+  padding: 30px 0
+.nav
+  max-width: 1110px
+.navbar-menu
+  display: flex
+  justify-content: space-around
+  padding: 0
+  margin: 0
+  &__item
+    line-height: 18px
+    list-style-type: none
+    text-transform: uppercase
+    color: $light
+  &__link
+    text-decoration: none
+    color: inherit

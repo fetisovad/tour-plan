@@ -9,6 +9,10 @@ body {
   padding: 0 15px;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -356,37 +360,57 @@ template {
   background-color: #ffffff;
 }
 
-.header-top {
+.navbar-top {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 40px 0;
 }
 
-.header__search-form {
-  margin-left: 108px;
+.logo {
+  width: 177px;
+}
+
+.menu-button {
+  display: none;
+  background-color: #FFFFFF;
+  height: 11px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-button__line {
+  width: 16px;
+  height: 1px;
+  background-color: #333333;
 }
 
 .search {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   height: 40px;
-  border-radius: 6px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
   overflow: hidden;
-  margin-right: auto;
 }
 
 .search__input {
-  border: none;
+  outline: none;
   width: 350px;
+  border: none;
   background-color: #f5fafe;
   padding-left: 23px;
   padding-right: 75px;
@@ -395,6 +419,36 @@ template {
   font-size: 12px;
   line-height: 15px;
   font-weight: 400;
+}
+
+.search__input::-webkit-input-placeholder {
+  color: #333333;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.search__input::-moz-placeholder {
+  color: #333333;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.search__input:-ms-input-placeholder {
+  color: #333333;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.search__input::-ms-input-placeholder {
+  color: #333333;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.search__input::placeholder {
+  color: #333333;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .search__button {
@@ -406,11 +460,18 @@ template {
   border: none;
 }
 
+.navbar__search-form {
+  margin-left: 108px;
+  margin-right: auto;
+}
+
 .user {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
@@ -419,7 +480,8 @@ template {
 .user__avatar {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -429,5 +491,104 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+.navbar-bottom {
+  background-color: #0A223D;
+  padding: 30px 0;
+}
+
+.nav {
+  max-width: 1110px;
+}
+
+.navbar-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-menu__item {
+  line-height: 18px;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.navbar-menu__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .navbar-top {
+    padding: 31px 0;
+  }
+  .logo {
+    width: 133px;
+  }
+  .navbar__search-form {
+    margin-left: 47px;
+  }
+  .search {
+    width: 340px;
+  }
+  .navbar-bottom {
+    padding: 22px 0;
+  }
+  .navbar-menu__item {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 280px;
+  }
+  .logo {
+    width: 99px;
+  }
+  .navbar-bottom {
+    display: none;
+  }
+  .navbar-top {
+    padding: 28px 0;
+  }
+  .navbar-top__menu-button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .search {
+    display: none;
+  }
+  .user {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
