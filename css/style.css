@@ -503,9 +503,10 @@ template {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0;
   margin: 0;
 }
@@ -535,7 +536,7 @@ template {
   .navbar__search-form {
     margin-left: 47px;
   }
-  .search {
+  .search__input {
     width: 340px;
   }
   .navbar-bottom {
@@ -550,20 +551,25 @@ template {
   .container {
     max-width: 700px;
   }
+  .navbar-menu {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) {
   .container {
-    max-width: 280px;
-  }
-  .logo {
-    width: 99px;
+    max-width: 560px;
   }
   .navbar-bottom {
     display: none;
   }
-  .navbar-top {
-    padding: 28px 0;
+  .search {
+    display: none;
+  }
+  .user {
+    display: none;
   }
   .navbar-top__menu-button {
     display: -webkit-box;
@@ -579,6 +585,21 @@ template {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 280px;
+  }
+  .logo {
+    width: 99px;
+  }
+  .navbar-bottom {
+    display: none;
+  }
+  .navbar-top {
+    padding: 28px 0;
   }
   .search {
     display: none;
