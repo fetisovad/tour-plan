@@ -512,6 +512,7 @@ template {
 }
 
 .navbar-menu__item {
+  font-size: 14px;
   line-height: 18px;
   list-style-type: none;
   text-transform: uppercase;
