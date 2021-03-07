@@ -755,6 +755,9 @@ img {
             flex-basis: auto;
     margin-left: auto;
   }
+  .hotel {
+    padding: 8px 0 40px;
+  }
   .hotel-name {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
@@ -783,6 +786,21 @@ img {
   }
   .user {
     display: none;
+  }
+  .stars {
+    margin-right: 17px;
+  }
+  .breadcrump {
+    padding: 15px 0;
+  }
+  .breadcrump-list {
+    margin-top: 5px;
+  }
+  .hotel {
+    padding: 5px 0 40px;
+  }
+  .hotel-name {
+    line-height: 38px;
   }
 }
 /*# sourceMappingURL=style.css.map */
