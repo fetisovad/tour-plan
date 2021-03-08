@@ -715,22 +715,22 @@ img {
           transform: translateY(-50%);
   width: 30px;
   height: 30px;
-  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: 10px 10px;
           background-size: 10px;
+  background-color: transparent;
   cursor: pointer;
   border: none;
   outline: none;
 }
 
-.slider--next {
+.slider-button--next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
 }
 
-.slider--prev {
+.slider-button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
 }
