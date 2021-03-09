@@ -27,6 +27,14 @@
     margin: 0
     font-size: 12px
     line-height: 15px
+  &-grid
+    display: flex
+    justify-content: space-between
+  &-right
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
 .offer
   border-radius: 3px
   padding: 3px 10px
@@ -59,7 +67,7 @@
       font-size: 10px
 .swiper-container
   width: 100%
-  height: 450px
+  height: 100%
   border-radius: 8px
   position: relative
   &::after
@@ -75,6 +83,7 @@
     z-index: 50
 .slider
   width: 728px
+  height: 450px
   &-button
     content: ''
     position: absolute
@@ -96,3 +105,72 @@
     &--prev
       left: 18px
       background-image: url(../img/arrow-prev.svg)
+.booking
+  background-color: $dark
+  padding: 27px
+  border-radius: 8px
+  width: 350px
+  font-family: 'Nunito', sans-serif
+  color: $light
+  &__info
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 8px
+  &__price
+    display: flex
+    flex-direction: column
+  &__start
+    font-weight: normal
+    font-size: 10px
+    line-height: 14px
+  &__pricetag
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+    margin-bottom: -2px
+  &__per-room
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 8px
+  &__description
+    margin-left: 9px
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &__call-center
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 17px
+  &__heading
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__number
+    text-decoration: none
+    color: inherit
+  &__num
+    margin-left: 8px
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__button
+    width: 100%
+    min-height: 45px
+    background-color: $primary
+    border-radius: 4px
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    color: $light
+.map
+  width: 347px
+  height: 213px
+  border-radius: 10px
+  overflow: hidden
