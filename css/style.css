@@ -1099,6 +1099,29 @@ iframe {
   -webkit-border-radius: 8px;
           border-radius: 8px;
   background-color: #FFFFFF;
+  position: relative;
+}
+
+.reviews-slider__item::before {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-image: url(../img/quote-left.svg);
+  top: 12px;
+  left: 64px;
+}
+
+.reviews-slider__item::after {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-image: url(../img/quote-right.svg);
+  top: 118px;
+  right: 64px;
 }
 
 .reviews-slider__profile {

@@ -19,6 +19,25 @@
       max-width: 730px
       border-radius: 8px
       background-color: $light
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        width: 70px
+        height: 48px
+        background-repeat: no-repeat
+        background-image: url(../img/quote-left.svg)
+        top: 12px
+        left: 64px
+      &::after
+        content: ''
+        position: absolute
+        width: 70px
+        height: 48px
+        background-repeat: no-repeat
+        background-image: url(../img/quote-right.svg)
+        top: 118px
+        right: 64px
     &__profile
       content: ''
       display: flex
