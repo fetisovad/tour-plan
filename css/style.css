@@ -931,6 +931,9 @@ header {
   .map {
     width: 300px;
   }
+  iframe {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1070px) {
