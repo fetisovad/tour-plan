@@ -27,8 +27,9 @@
     width: 270px
 
 @media screen and ( max-width: 992px )
-  .container
+  .container,.newslatter-wrapper
     max-width: 730px
+    padding: 0 15px
   .navbar-top
     padding: 31px 0
   .logo
@@ -46,6 +47,7 @@
   .stars
     margin-bottom: -3px
   .hotel
+    padding-bottom: 26px
     &-right
       flex-direction: row
     &__slider
@@ -60,9 +62,11 @@
     padding: 27px 22px
   .map
     width: 340px
+  .newslatter
+    padding: 93px 0
 
 @media screen and ( max-width: 768px )
-  .container
+  .container, .newslatter-wrapper
     max-width: 700px
   .navbar-menu
     justify-content: space-around
@@ -79,7 +83,7 @@
       flex-direction: column
 
 @media screen and ( max-width: 767px )
-  .container
+  .container, .newslatter-wrapper
     max-width: 560px
   .navbar-bottom
     display: none
@@ -106,9 +110,21 @@
       flex-basis: 100%
     &-wrapper
       width: 100%
+  .newslatter
+    padding: 76px 0 83px
+    &-wrapper
+      flex-direction: column
+      align-items: flex-start
+    &__text
+      margin-bottom: 37px
+
+@media screen and ( max-width: 390px )
+  .newslatter
+    &__subscribe-form
+      max-width: 260px
 
 @media screen and ( max-width: 320px )
-  .container
+  .container, .newslatter-wrapper
     max-width: 310px
   .logo
     width: 99px
@@ -127,7 +143,7 @@
     &-list
       margin-top: 5px
   .hotel
-    padding: 5px 0 40px
+    padding: 5px 0 8px
     &-info
       padding-bottom: 35px
     &-name
@@ -149,3 +165,19 @@
   .map
     min-height: 173px
     max-height: 173px
+.newslatter
+  padding-top: 78px
+  &__text
+    margin-bottom: 37px
+  &__title
+    font-weight: 300
+    font-size: 20px
+    line-height: 25px
+  &__strong
+    font-weight: 600
+    font-size: 30px
+    line-height: 38px
+  &__subscribe-form
+    min-width: 280px
+  &__input
+    padding-left: 20px
