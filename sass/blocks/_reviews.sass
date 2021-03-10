@@ -1,2 +1,74 @@
 .reviews
   padding: 40px 0 60px
+  &__title
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin: 0 auto 70px 0
+  &-slider
+    display: flex
+    flex-direction: column
+    &__item
+      display: flex
+      align-items: center
+      flex-direction: column
+      padding: 0 62px 30px
+      margin: 45px auto 0
+      max-width: 730px
+      border-radius: 8px
+      background-color: $light
+    &__profile
+      content: ''
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: -45px
+    &__avatar
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+      margin-bottom: 9px
+    &__username
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: $primary
+      margin: 0 0 10px 0
+    &__date
+      font-weight: normal
+      font-size: 10px
+      line-height: 13px
+    &__text
+      width: 537px
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
+      margin: 0
+      overflow-y: auto
+    &__rating
+      margin-top: -3px
+      margin-bottom: 30px
+    &__button
+      content: ''
+      position: absolute
+      width: 30px
+      height: 30px
+      background-repeat: no-repeat
+      background-position: center
+      top: 45%
+      transform: translateY(-50%)
+      z-index: 70
+      border: none
+      background-color: transparent
+      outline: none
+      cursor: pointer
+      &--prev
+        background-image: url(../img/reviews-arrow-left.svg)
+        left: 18px
+      &--next
+        background-image: url(../img/reviews-arrow-right.svg)
+        right: 18px
