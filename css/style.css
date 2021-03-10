@@ -907,6 +907,11 @@ header {
   overflow: hidden;
 }
 
+.gmnoprint {
+  top: 30px;
+  right: 18px;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1127,6 +1132,18 @@ header {
   .slider {
     width: 280px;
     height: 179px;
+  }
+  .slider-button {
+    -webkit-background-size: 4px 4px;
+            background-size: 4px;
+    width: 12px;
+    height: 12px;
+  }
+  .slider-button--prev {
+    left: 7px;
+  }
+  .slider-button--next {
+    right: 7px;
   }
   .booking {
     padding: 29px 21px;
