@@ -15,6 +15,9 @@
     width: 300px
   iframe
     width: 100%
+  .card
+    width: 220px
+    height: 220px
 
 @media screen and ( max-width: 1070px )
   .container
@@ -85,6 +88,14 @@
           left: 0
         &--next
           right: 0
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 339px
+    height: 225px
 
 @media screen and ( max-width: 768px )
   .container, .newslatter-wrapper
@@ -102,6 +113,14 @@
     padding: 29px 22px 26px
   .hotel
     padding-top: 10px
+  .activities
+    padding-top: 55px
+    padding-bottom: 70px
+  .card
+    padding-bottom: 26px
+    height: 255px
+    &__title
+      max-width: 200px
 
 @media screen and ( max-width: 767px )
   .container, .newslatter-wrapper
@@ -129,6 +148,11 @@
     width: 100%
     margin-bottom: 20px
   .map
+    width: 100%
+  .activities
+    &-wrapper
+      flex-direction: column
+  .card
     width: 100%
 
   .hotel
@@ -243,7 +267,7 @@
     &__input
       padding-left: 20px
   .reviews
-    padding: 44px 0 60px
+    padding: 44px 0 50px
     &-slider
       &__rating
         margin-right: 2px
@@ -262,3 +286,24 @@
       line-height: 23px
       white-space: break-spaces
       margin-bottom: 44px
+  .activities
+    padding-top: 42px
+    padding-bottom: 60px
+    &__title
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-transform: uppercase
+      margin-bottom: 36px
+    &__card
+      margin-bottom: 23px
+  .card
+    padding-bottom: 24px
+    &:nth-child(1)
+      order: 1
+    &:nth-child(3)
+      order: 2
+    &:nth-child(2)
+      order: 3
+    &:nth-child(4)
+      order: 4
