@@ -1317,6 +1317,9 @@ iframe {
     line-height: 38px;
     margin-bottom: 50px;
   }
+  .reviews-slider__rating {
+    margin-bottom: 30px;
+  }
   .reviews-slider__item {
     max-width: 579px;
   }
