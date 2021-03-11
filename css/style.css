@@ -1340,7 +1340,13 @@ iframe {
 
 @media screen and (max-width: 768px) {
   .container, .newslatter-wrapper {
-    max-width: 700px;
+    max-width: 730px;
+  }
+  .logo {
+    margin-bottom: 6px;
+  }
+  .navbar-top {
+    padding: 30px 0;
   }
   .navbar-menu {
     -webkit-justify-content: space-around;
@@ -1349,21 +1355,13 @@ iframe {
   }
   .hotel-slider {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 29px;
   }
   .booking {
-    width: 100%;
-    margin-bottom: 20px;
+    padding: 29px 22px 26px;
   }
-  .map {
-    width: 100%;
-  }
-  .hotel-right {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .hotel {
+    padding-top: 10px;
   }
 }
 
@@ -1411,8 +1409,22 @@ iframe {
             flex-basis: auto;
     margin-left: auto;
   }
+  .booking {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .map {
+    width: 100%;
+  }
   .hotel {
     padding: 8px 0 40px;
+  }
+  .hotel-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .hotel-name {
     -webkit-flex-basis: 100%;
@@ -1496,7 +1508,7 @@ iframe {
     display: none;
   }
   .navbar-top {
-    padding: 28px 0;
+    padding: 25px 0;
   }
   .search {
     display: none;
@@ -1525,17 +1537,18 @@ iframe {
   .hotel-slider {
     width: 280px;
     height: 179px;
+    margin-bottom: 20px;
   }
-  .hotel-slider-button {
+  .hotel-slider__button {
     -webkit-background-size: 4px 4px;
             background-size: 4px;
     width: 12px;
     height: 12px;
   }
-  .hotel-slider-button--prev {
+  .hotel-slider__button--prev {
     left: 7px;
   }
-  .hotel-slider-button--next {
+  .hotel-slider__button--next {
     right: 7px;
   }
   .booking {
