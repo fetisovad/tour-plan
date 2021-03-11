@@ -1275,7 +1275,7 @@ iframe {
   .navbar-menu__item {
     font-size: 12px;
   }
-  .stars {
+  .hotel-wrapper__stars {
     margin-bottom: -3px;
   }
   .hotel {
@@ -1406,7 +1406,7 @@ iframe {
             order: -1;
     margin-left: 0;
   }
-  .stars {
+  .hotel-wrapper__stars {
     -webkit-flex-basis: auto;
         -ms-flex-preferred-size: auto;
             flex-basis: auto;
@@ -1519,7 +1519,7 @@ iframe {
   .user {
     display: none;
   }
-  .stars {
+  .hotel-wrapper__stars {
     margin-right: 17px;
   }
   .breadcrump {
