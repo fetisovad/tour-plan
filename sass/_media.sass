@@ -149,11 +149,8 @@
     margin-bottom: 20px
   .map
     width: 100%
-  .activities
-    &-wrapper
-      flex-direction: column
   .card
-    width: 100%
+    width: 255px
 
   .hotel
     padding: 8px 0 40px
@@ -190,6 +187,17 @@
         max-width: 380px
     &__title
       font-size: 24px
+
+@media screen and ( max-width: 550px )
+  .card
+    width: 245px
+
+@media screen and ( max-width: 530px )
+  .activities
+    &-wrapper
+      flex-direction: column
+  .card
+    width: 100%
 
 @media screen and ( max-width: 440px )
   .reviews

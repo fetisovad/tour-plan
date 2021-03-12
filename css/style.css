@@ -1530,15 +1530,8 @@ iframe {
   .map {
     width: 100%;
   }
-  .activities-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .card {
-    width: 100%;
+    width: 255px;
   }
   .hotel {
     padding: 8px 0 40px;
@@ -1600,6 +1593,25 @@ iframe {
   }
   .reviews__title {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .card {
+    width: 245px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .activities-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card {
+    width: 100%;
   }
 }
 
