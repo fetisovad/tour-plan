@@ -2188,6 +2188,9 @@ iframe {
   .reviews__title {
     font-size: 17px;
   }
+  .footer__categories {
+    max-width: 90%;
+  }
 }
 
 @media screen and (max-width: 35gi0px) {
