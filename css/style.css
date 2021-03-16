@@ -1322,6 +1322,7 @@ iframe {
   line-height: 23px;
   text-transform: uppercase;
   margin: 0 0 16px;
+  white-space: nowrap;
 }
 
 .footer__title--inline {
