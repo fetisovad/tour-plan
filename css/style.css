@@ -1602,13 +1602,13 @@ iframe {
   color: #E0E0E0;
 }
 
-.footer-bottom {
+.footer__bottom {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-column: 2 / 5;
 }
 
-.footer-bottom__links {
+.footer__bottom-links {
   color: #FFFFFF;
   font-size: 12px;
   line-height: 15px;
@@ -1630,17 +1630,17 @@ iframe {
           justify-content: space-between;
 }
 
-.footer-bottom__link {
+.footer__bottom-link {
   text-decoration: none;
   color: inherit;
 }
 
-.footer-bottom__pay {
+.footer__bottom-pay {
   -ms-grid-column-align: end;
       justify-self: end;
 }
 
-.footer-bottom__pay--mt-7 {
+.footer__bottom-pay--mt-7 {
   margin-top: -7px;
 }
 
@@ -1843,22 +1843,22 @@ iframe {
     grid-row: 4;
     grid-column: span 6;
   }
-  .footer-bottom {
+  .footer__bottom {
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
     grid-column: 1 / 6;
   }
-  .footer-bottom__links {
+  .footer__bottom-links {
     grid-column: span 3;
   }
-  .footer-bottom__pay {
+  .footer__bottom-pay {
     -ms-grid-column: 5;
     -ms-grid-column-span: 2;
     grid-column: 5 / 7;
     -ms-grid-column-align: end;
         justify-self: end;
   }
-  .footer-bottom__pay--mt-7 {
+  .footer__bottom-pay--mt-7 {
     margin-top: -7px;
   }
 }
@@ -1950,16 +1950,16 @@ iframe {
     max-width: 90%;
     margin-bottom: 44px;
   }
-  .footer-bottom {
+  .footer__bottom {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-column: 1 / 4;
   }
-  .footer-bottom__links {
+  .footer__bottom-links {
     -ms-grid-column-align: start;
         justify-self: start;
   }
-  .footer-bottom__pay {
+  .footer__bottom-pay {
     -ms-grid-column: 5;
     -ms-grid-column-span: 3;
     grid-column: 5 / 8;
@@ -2120,13 +2120,13 @@ iframe {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .footer-bottom__links {
+  .footer__bottom-links {
     -ms-grid-row: 8;
     grid-row: 8;
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .footer-bottom__pay {
+  .footer__bottom-pay {
     -ms-grid-row: 9;
     grid-row: 9;
     -ms-grid-column: 1;
@@ -2407,10 +2407,10 @@ iframe {
   .footer__message {
     margin-bottom: 16px;
   }
-  .footer-bottom__links {
+  .footer__bottom-links {
     min-width: 276px;
   }
-  .footer-bottom__pay {
+  .footer__bottom-pay {
     -ms-grid-row: 8;
     grid-row: 8;
     margin-top: 24px;
