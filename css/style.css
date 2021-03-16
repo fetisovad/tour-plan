@@ -2021,7 +2021,7 @@ iframe {
   .navbar-menu__item--visible {
     display: block;
   }
-  .navbar__mobile--fixed {
+  .navbar--mobile--fixed {
     position: fixed;
     top: 0;
     right: 0;
@@ -2040,7 +2040,10 @@ iframe {
     bottom: 0;
     overflow-y: auto;
   }
-  .navbar__user--hidden, .navbar__search--hidden {
+  .navbar__user--hidden, .navbar__search-form--hidden {
+    display: none;
+  }
+  .navbar .user--hidden {
     display: none;
   }
   .navbar-top__menu-button {
@@ -2280,10 +2283,10 @@ iframe {
     margin: auto;
     width: 245px;
     margin-top: 15px;
-    margin-bottom: 11.5px;
+    margin-bottom: 13.5px;
   }
   .navbar-menu__item {
-    margin: 10.5px;
+    margin: 10px;
   }
   .navbar-bottom {
     display: none;

@@ -196,10 +196,6 @@
     padding-top: 78px
   .container, .newslatter-wrapper
     max-width: 560px
-  // .search
-  //   display: none
-  // .user
-  //   display: none
   .user
     display: flex
     flex-direction: column
@@ -218,7 +214,7 @@
         margin-bottom: 20px
         &--visible
           display: block
-    &__mobile
+    &--mobile
       &--fixed
         position: fixed
         top: 0
@@ -235,7 +231,10 @@
         right: 0
         bottom: 0
         overflow-y: auto
-    &__user, &__search
+    &__user, &__search-form
+      &--hidden
+        display: none
+    .user
       &--hidden
         display: none
   .navbar-top
@@ -389,10 +388,10 @@
         margin: auto
         width: 245px
         margin-top: 15px
-        margin-bottom: 11.5px
+        margin-bottom: 13.5px
     &-menu
       &__item
-        margin: 10.5px
+        margin: 10px
   .navbar-bottom
     display: none
     &--visible
@@ -402,10 +401,6 @@
       top: 66px
   .navbar-top
     padding: 25px 0
-  // .search
-  //   display: none
-  // .user
-  //   display: none
   .hotel-wrapper__stars
     margin-right: 17px
     margin-bottom: 4px
