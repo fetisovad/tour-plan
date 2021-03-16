@@ -367,7 +367,7 @@ img {
   cursor: pointer;
 }
 
-header {
+.navbar {
   background-color: #ffffff;
 }
 
@@ -528,6 +528,10 @@ header {
   list-style-type: none;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.navbar-menu__item--hidden {
+  display: none;
 }
 
 .navbar-menu__link {
@@ -1968,16 +1972,75 @@ iframe {
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    padding-top: 78px;
+  }
   .container, .newslatter-wrapper {
     max-width: 560px;
+  }
+  .user {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .user__name {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .user__name--light {
+    color: #FFFFFF;
+  }
+  .navbar-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--visible {
+    display: block;
+  }
+  .navbar__mobile--fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
   }
   .navbar-bottom {
     display: none;
   }
-  .search {
-    display: none;
+  .navbar-bottom--visible {
+    display: block;
+    position: fixed;
+    top: 78px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
   }
-  .user {
+  .navbar__user--hidden, .navbar__search--hidden {
     display: none;
   }
   .navbar-top__menu-button {
@@ -2170,6 +2233,9 @@ iframe {
   .card {
     width: 100%;
   }
+  .search {
+    width: 230px;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -2193,34 +2259,54 @@ iframe {
   }
 }
 
-@media screen and (max-width: 35gi0px) {
-  .footer-wrapper {
-    -ms-grid-columns: 280px;
-        grid-template-columns: 280px;
-  }
-}
-
 @media screen and (max-width: 320px) {
+  body {
+    padding-top: 67px;
+  }
   .container, .newslatter-wrapper {
     max-width: 310px;
   }
   .logo {
     width: 99px;
   }
+  .user__name {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: none;
+    margin-bottom: -9px;
+  }
+  .navbar__search-form {
+    margin: auto;
+    width: 245px;
+    margin-top: 15px;
+    margin-bottom: 11.5px;
+  }
+  .navbar-menu__item {
+    margin: 10.5px;
+  }
   .navbar-bottom {
     display: none;
+  }
+  .navbar-bottom--visible {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 28px;
+    top: 66px;
   }
   .navbar-top {
     padding: 25px 0;
   }
-  .search {
-    display: none;
-  }
-  .user {
-    display: none;
-  }
   .hotel-wrapper__stars {
     margin-right: 17px;
+    margin-bottom: 4px;
   }
   .breadcrump {
     padding: 15px 0;

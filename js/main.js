@@ -29,3 +29,8 @@ $(".parallax-window").parallax({
   imageSrc: "img/newslatter-bg.jpg",
   speed: "0.7",
 });
+
+const mobileMenu = document.querySelector(".menu-button");
+mobileMenu.addEventListener("click", () => {
+  document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
+})

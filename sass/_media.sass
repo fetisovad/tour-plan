@@ -192,14 +192,52 @@
         grid-column: 5 / 8
 
 @media screen and ( max-width: 767px )
+  body
+    padding-top: 78px
   .container, .newslatter-wrapper
     max-width: 560px
-  .navbar-bottom
-    display: none
-  .search
-    display: none
+  // .search
+  //   display: none
+  // .user
+  //   display: none
   .user
-    display: none
+    display: flex
+    flex-direction: column
+    &__name
+      margin-left: 0
+      margin-top: 10px
+      &--light
+        color: $light
+  .navbar
+    &-menu
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      &__item
+        margin-bottom: 20px
+        &--visible
+          display: block
+    &__mobile
+      &--fixed
+        position: fixed
+        top: 0
+        right: 0
+        left: 0
+        z-index: 99
+    &-bottom
+      display: none
+      &--visible
+        display: block
+        position: fixed
+        top: 78px
+        left: 0
+        right: 0
+        bottom: 0
+        overflow-y: auto
+    &__user, &__search
+      &--hidden
+        display: none
   .navbar-top
     &__menu-button
       display: flex
@@ -304,6 +342,8 @@
       flex-direction: column
   .card
     width: 100%
+  .search
+    width: 230px
 
 @media screen and ( max-width: 440px )
   .reviews
@@ -324,26 +364,51 @@
     &__categories
       max-width: 90%
 
-@media screen and ( max-width: 35gi0px )
-  .footer
-    &-wrapper
-      grid-template-columns: 280px
+// @media screen and ( max-width: 350px )
+//   .footer
+//     &-wrapper
+//       grid-template-columns: 280px
 
 @media screen and ( max-width: 320px )
+  body
+    padding-top: 67px
   .container, .newslatter-wrapper
     max-width: 310px
   .logo
     width: 99px
+  .user
+    &__name
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      text-transform: none
+      margin-bottom: -9px
+  .navbar
+    &__search
+      &-form
+        margin: auto
+        width: 245px
+        margin-top: 15px
+        margin-bottom: 11.5px
+    &-menu
+      &__item
+        margin: 10.5px
   .navbar-bottom
     display: none
+    &--visible
+      display: flex
+      flex-direction: column
+      padding-top: 28px
+      top: 66px
   .navbar-top
     padding: 25px 0
-  .search
-    display: none
-  .user
-    display: none
+  // .search
+  //   display: none
+  // .user
+  //   display: none
   .hotel-wrapper__stars
     margin-right: 17px
+    margin-bottom: 4px
   .breadcrump
     padding: 15px 0
     &-list
