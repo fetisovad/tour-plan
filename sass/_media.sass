@@ -18,6 +18,13 @@
   .card
     width: 220px
     height: 220px
+  .grid
+    &-card
+      &__description
+        &--first
+          padding: 10px 21px 16px 45px
+      &__text
+        margin-bottom: 34px
 
 @media screen and ( max-width: 1070px )
   .container
@@ -132,6 +139,16 @@
         justify-self: end
         &--mt-7
           margin-top: -7px
+  .grid
+    &-wrapper
+      grid-template-columns: 1fr 1fr
+      grid-template-row: 1fr 1fr
+    &-card
+      &__description
+        &--first
+          padding: 35px 21px 35px 44px
+      &__text
+        margin: 0 0 46px 0
 
 @media screen and ( max-width: 768px )
   .container, .newslatter-wrapper
@@ -322,6 +339,33 @@
       flex-basis: 100%
     &__icon-wrapper
       min-width: 35px
+  .grid
+    &-wrapper
+      grid-gap: 20px
+    &-card
+      height: 500px
+      &__img
+        height: 200px
+        &--size
+          height: 500px
+      &__description
+        &--first
+          padding: 10px 21px 20px 20px
+      &__title
+        margin-bottom: 18px
+      &__text
+        font-size: 13px
+        margin-bottom: 20px
+      &__icons
+        &-text
+          &--mb
+            margin-bottom: 15px
+      &__price
+        margin-bottom: 10px
+      &__bottom
+        flex-direction: column
+      &__button
+        width: 100%
 
 @media screen and ( max-width: 576px )
   .reviews
@@ -330,6 +374,34 @@
         max-width: 380px
     &__title
       font-size: 24px
+  .other-packages
+    &__title
+      font-size: 30px
+      margin-bottom: 20px
+  .other-packages
+    &__title
+      font-size: 24px
+  .grid
+    &-wrapper
+      display: flex
+      flex-direction: column
+    &-card
+      max-width: 100%
+      &:first-child
+        flex-direction: column
+      &__img
+        &--size
+          width: 100%
+          height: 200px
+      &__description
+        &--first
+          padding: 30px 21px 25px 32px
+          width: 100%
+      &__offer
+        padding: 8px 12px
+        min-width: 95px
+        font-size: 12px
+        line-height: 15px
 
 @media screen and ( max-width: 550px )
   .card
