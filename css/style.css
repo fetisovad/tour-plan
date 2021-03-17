@@ -921,6 +921,207 @@ iframe {
   height: 100%;
 }
 
+.other-packages {
+  padding: 40px 0 70px;
+}
+
+.other-packages__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 65px;
+}
+
+.grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.grid-card {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #0A223D;
+  color: #FFFFFF;
+  min-height: 500px;
+  max-width: 350px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  overflow: hidden;
+}
+
+.grid-card:nth-child(1) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  grid-column: span 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  max-width: 730px;
+}
+
+.grid-card__stars {
+  margin-bottom: 6px;
+}
+
+.grid-card__description {
+  padding: 30px 21px 25px 32px;
+}
+
+.grid-card__description--first {
+  padding: 35px 21px 35px 44px;
+  width: 50%;
+}
+
+.grid-card__img {
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid-card__img--size {
+  width: 50%;
+  height: 500px;
+}
+
+.grid-card__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 23px 0;
+}
+
+.grid-card__title--first {
+  margin: 0 0 27px 0;
+}
+
+.grid-card__text {
+  font-size: 14px;
+  line-height: 160.6%;
+  margin: 0 0 46px 0;
+}
+
+.grid-card__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.grid-card__icons-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.grid-card__icons-text--mb {
+  margin-bottom: 24px;
+}
+
+.grid-card__icon {
+  width: 14px;
+  margin-right: 15px;
+}
+
+.grid-card__icon-text {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.grid-card__icon-text-mb {
+  margin-bottom: 13px;
+}
+
+.grid-card__old-price {
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  margin-bottom: 5px;
+}
+
+.grid-card__pricetag {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.grid-card__button {
+  background-color: #ec1f46;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: inherit;
+  height: 40px;
+  min-width: 120px;
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  margin-bottom: -4px;
+}
+
+.grid-card__bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grid-card__offer {
+  padding: 4px 9px;
+  content: '';
+  position: absolute;
+  top: 26px;
+  left: 0;
+  background-color: #ec1f46;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  -webkit-border-radius: 0px 4px 4px 0px;
+          border-radius: 0px 4px 4px 0px;
+}
+
+.grid-card__offer--first {
+  padding: 8px 12px;
+  min-width: 95px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 .newslatter {
   padding: 98px 0 87px;
   background-position: center;
