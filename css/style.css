@@ -2815,5 +2815,8 @@ iframe {
     margin-top: 24px;
     margin-left: 0;
   }
+  .footer__text {
+    max-width: 280px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
