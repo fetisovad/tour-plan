@@ -932,6 +932,10 @@ iframe {
   height: 100%;
 }
 
+.thank {
+  padding-bottom: 40px;
+}
+
 .other-packages {
   padding: 40px 0 70px;
 }
