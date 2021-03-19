@@ -19,10 +19,11 @@
     <header class="navbar navbar--mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a class="logo" href="index.html"><img
-            src="img/horizontal-logo.svg"
-            alt="Logo: Best Tour Plan"
-            class="logo"
+          <a class="logo" href="index.html"
+            ><img
+              src="img/horizontal-logo.svg"
+              alt="Logo: Best Tour Plan"
+              class="logo"
           /></a>
           <form
             action="#"
@@ -235,7 +236,7 @@
                   /><span class="booking__num">12100</span>
                 </a>
               </div>
-              <button class="button booking__button">View Other Options</button>
+              <button class="button booking__button"  data-modal>View Other Options</button>
             </div>
             <div class="map">
               <iframe
@@ -254,7 +255,9 @@
         <h2 class="other-packages__title">Other Packages</h2>
         <div class="grid-wrapper">
           <div class="grid-card">
-            <div class="grid-card__offer grid-card__offer--first">Flash Offer</div>
+            <div class="grid-card__offer grid-card__offer--first">
+              Flash Offer
+            </div>
             <img
               src="img/packages/img-1.jpg"
               alt="card-img"
@@ -301,7 +304,9 @@
                     alt="house"
                     class="grid-card__icon"
                   />
-                  <span class="grid-card__icon-text grid-card__icon-text-mb">1 x Room</span>
+                  <span class="grid-card__icon-text grid-card__icon-text-mb"
+                    >1 x Room</span
+                  >
                 </div>
                 <div class="grid-card__bottom">
                   <div class="grid-card__price">
@@ -514,7 +519,11 @@
           <h2 class="newslatter__title">subscribe to our</h2>
           <span class="newslatter__strong">Newsletter</span>
         </div>
-        <form action="subscribe.php" method="POST" class="subscribe newslatter__subscribe-form">
+        <form
+          action="subscribe.php"
+          method="POST"
+          class="subscribe newslatter__subscribe-form"
+        >
           <input
             type="text"
             class="newslatter__input"
@@ -638,7 +647,7 @@
               class="card__image"
             />
             <div class="card__title">The curious corner <br />of chamarel</div>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-modal>Book Now</button>
           </div>
           <div class="card activities__card">
             <img
@@ -648,7 +657,7 @@
               class="card__image"
             />
             <div class="card__title">Gymkhana club golf course</div>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-modal>Book Now</button>
           </div>
           <div class="card activities__card">
             <img
@@ -662,7 +671,7 @@
             <div class="card__title">
               Tamarind falls hiking <br />trip - full day
             </div>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-modal>Book Now</button>
           </div>
           <div class="card activities__card">
             <img
@@ -672,7 +681,7 @@
               class="card__image"
             />
             <div class="card__title">The blue marine discovery quest</div>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-modal>Book Now</button>
           </div>
         </div>
       </div>
@@ -680,10 +689,11 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a class="logo footer__logo" href="index.html"><img
-            src="img/vertical-logo.svg"
-            alt="Logo"
-            class="logo footer__logo"
+          <a class="logo footer__logo" href="index.html"
+            ><img
+              src="img/vertical-logo.svg"
+              alt="Logo"
+              class="logo footer__logo"
           /></a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
@@ -742,12 +752,17 @@
           <div class="footer__social">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" target="_blank" rel="nofollow noopener"><img src="img/fb.svg" alt="facebook"/></a>
-              
-              <a href="#" target="_blank" rel="nofollow noopener"><img src="img/yt.svg" alt="youtube"/></a>
-              
-              <a href="#" target="_blank" rel="nofollow noopener"><img src="img/inst.svg" alt="instagram"/></a>
-              
+              <a href="#" target="_blank" rel="nofollow noopener"
+                ><img src="img/fb.svg" alt="facebook"
+              /></a>
+
+              <a href="#" target="_blank" rel="nofollow noopener"
+                ><img src="img/yt.svg" alt="youtube"
+              /></a>
+
+              <a href="#" target="_blank" rel="nofollow noopener"
+                ><img src="img/inst.svg" alt="instagram"
+              /></a>
             </div>
           </div>
           <div class="footer__list footer__legal">
@@ -821,7 +836,6 @@
                 class="footer__input"
                 placeholder="Phone Number*"
                 name="phone"
-
               />
               <textarea
                 class="footer__message"
@@ -829,7 +843,6 @@
                 rows="10"
                 placeholder="Message"
                 name="message"
-
               ></textarea>
               <button class="button footer__button">Send</button>
               <span class="footer__requires">* Required Fields</span>
@@ -848,6 +861,32 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__window">
+        <h3 class="modal__title">Booking</h3>
+        <form action="modal-send.php" method="POST" class="modal__form">
+          <input
+            type="text"
+            class="modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+          />
+          <input type="text" class="modal__input" placeholder="Phone Number*" name="phone"/>
+          <input type="text" class="modal__input" placeholder="Email*" name="email"/>
+          <textarea
+            class="modal__message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <div class="modal__bottom"><button class="button modal__button">Send</button>
+            <span class="modal__requires">* Required Fields</span></div>
+          <a href="#"><img src="img/close.svg" alt="close" class="modal__close"></a>
+        </form>
+      </div>
+      <div class="modal__overlay"></div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/parallax.min.js"></script>

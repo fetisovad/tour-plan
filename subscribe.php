@@ -7,11 +7,11 @@ require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $subscribe = $_POST['subscribe'];
 // Формирование самого письма
-$title = "Новое сообщение Best Tour Plan - subscribe";
+$title = "New message Best Tour Plan - subscribe";
 $body = "
-<h2>Новое письмо</h2>
-<h3>У вас новая подписка на рассылку</h3>
-<b>email:</b><br>$subscribe";
+<h2>New message</h2>
+<h3>New subscriber</h3>
+<b>E-mail:</b><br>$subscribe";
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
