@@ -3109,13 +3109,17 @@ iframe {
   .footer__text {
     max-width: 280px;
   }
+  .modal__window {
+    padding: 15px;
+  }
 }
 
 @media (orientation: landscape) and (max-height: 500px) {
   .modal__window {
-    padding: 20px;
     min-height: 250px;
+    height: 300px;
     overflow-y: auto;
+    padding: 15px;
   }
   .modal__form {
     -webkit-box-orient: horizontal;
