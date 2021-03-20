@@ -3115,7 +3115,7 @@ iframe {
   }
 }
 
-@media (orientation: landscape) and (max-height: 500px) and (max-width: 992px) {
+@media (max-height: 500px) {
   .modal__window {
     min-height: 250px;
     height: 300px;
