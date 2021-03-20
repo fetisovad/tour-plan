@@ -650,7 +650,7 @@
   .modal
     &__window
       padding: 15px
-@media (orientation: landscape) and (max-height: 500px)
+@media (orientation: landscape) and (max-height: 500px) and (max-width: 992px)
   .modal
     &__window
       min-height: 250px
@@ -666,13 +666,14 @@
       width: 48%
       &--email
         order: 1
+        flex-basis: 100%
     &__bottom
       order: 1
-      width: 48%
-      flex-direction: column
-    &__button
       width: 100%
-      margin-bottom: 5px
-      min-width: 140px
+      // flex-direction: column
+    // &__button
+      // width: 100%
+    //   margin-bottom: 5px
+    //   min-width: 140px
     &__message
       min-height: 50px
