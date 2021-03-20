@@ -1904,8 +1904,6 @@ iframe {
 
 .modal__window {
   min-width: 478px;
-  height: 478px;
-  overflow-y: auto;
   position: relative;
   padding: 30px 86px 30px 90px;
   position: fixed;
@@ -2699,6 +2697,7 @@ iframe {
   .modal__window {
     min-width: 402px;
     min-height: 436px;
+    height: 436px;
     padding: 33px 50px;
     z-index: 200;
   }
@@ -3145,10 +3144,10 @@ iframe {
     width: 48%;
   }
   .modal__input--email {
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0;
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
