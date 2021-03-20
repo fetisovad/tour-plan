@@ -368,13 +368,16 @@
         width: 100%
   .modal
     &__window
+      min-width: 402px
+      min-height: 436px
       padding: 33px 50px
-      top: 57%
+      z-index: 200
+    &__overlay
+      z-index: 150
     &__message
       max-height: 60px
     &__input
       height: 35px
-    
 
 @media screen and ( max-width: 576px )
   .reviews
@@ -415,6 +418,14 @@
     &__window
       padding: 33px
       width: 80%
+    &__window
+      z-index: 200
+      min-width: 70%
+      min-height: 436px
+      padding: 33px 50px
+      top: 57%
+    &__overlay
+      z-index: 150
 
 @media screen and ( max-width: 550px )
   .card
@@ -429,14 +440,14 @@
   .search
     width: 230px
 
-@media screen and ( max-width: 440px )
-  .reviews
-    &-slider
-      &__text
-        max-width: 280px
-    &__title
-      font-size: 20px
+@media screen and ( max-width: 470px )
   .modal
+    &__window
+      transform: translate(-50%, -61%);
+    &__message
+      max-height: 60px
+    &__input
+      height: 25px
     &__bottom
       flex-direction: column
     &__button
@@ -444,6 +455,15 @@
       margin-bottom: 15px
     &__requires
       align-self: flex-start
+
+@media screen and ( max-width: 440px )
+  .reviews
+    &-slider
+      &__text
+        max-width: 280px
+    &__title
+      font-size: 20px
+  
 
 @media screen and ( max-width: 390px )
   .newslatter
@@ -624,3 +644,28 @@
         margin-left: 0
     &__text
       max-width: 280px
+@media (orientation: landscape) 
+  .modal
+    &__window
+      padding: 20px
+      min-height: 250px
+    &__form
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+    &__input
+      height: 30px
+      width: 48%
+      &--email
+        order: 1
+    &__bottom
+      order: 1
+      width: 48%
+      flex-direction: column
+    &__button
+      width: 100%
+      margin-bottom: 5px
+      min-width: 140px
+    &__message
+      min-height: 50px
+    

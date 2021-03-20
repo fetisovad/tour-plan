@@ -17,8 +17,10 @@
       visibility: visible
       opacity: 1
   &__window
+    min-width: 478px
+    min-height: 487px
     position: relative
-    padding: 33px 88px
+    padding: 30px 86px 30px 90px
     position: fixed
     top: 50%
     left: 50%
@@ -39,7 +41,7 @@
     text-transform: uppercase
     white-space: nowrap
     text-align: center
-    margin: 0 0 15px
+    margin: 5px 0 15px
   &__input
     background-color: $light
     padding: 18px 23px
@@ -57,12 +59,12 @@
   &__message
     background-color: $light
     flex-basis: 100%
-    padding: 18px 23px
+    padding: 18px 10px
     border-radius: 4px
     border: none
     outline: none
-    margin-bottom: 22px
-    max-height: 123px
+    margin-bottom: 13px
+    min-height: 123px
     overflow-y: auto
     &::placeholder
       font-weight: normal
