@@ -2143,7 +2143,7 @@ iframe {
     width: 133px;
   }
   .navbar__search-form {
-    margin-left: 47px;
+    margin-left: auto;
     width: 340px;
   }
   .navbar-bottom {
