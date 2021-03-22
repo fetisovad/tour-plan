@@ -378,6 +378,37 @@ img {
   padding: 10px 20px;
 }
 
+label.invalid {
+  background-color: red;
+  color: black;
+  font-size: 10px;
+  position: absolute;
+  top: -25px;
+  width: 100%;
+  left: 0;
+  border: 5px solid red;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+}
+
+label.invalid::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: -7px;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 10px;
+}
+
+.newslatter__input.invalid {
+  border: 5px solid red;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -1713,7 +1744,7 @@ iframe {
 
 .footer__input {
   background-color: #FFFFFF;
-  width: 47%;
+  width: 100%;
   padding: 18px 23px;
   margin-bottom: 15px;
   -webkit-border-radius: 4px;
@@ -1756,6 +1787,18 @@ iframe {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
+}
+
+.footer__input-group {
+  background-color: #FFFFFF;
+  width: 48%;
+  margin-bottom: 15px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border: none;
+  outline: none;
+  height: 50px;
+  position: relative;
 }
 
 .footer__message {
@@ -1939,14 +1982,26 @@ iframe {
 
 .modal__input {
   background-color: #FFFFFF;
+  width: 100%;
   padding: 18px 23px;
   margin-bottom: 15px;
   -webkit-border-radius: 4px;
           border-radius: 4px;
   border: none;
   outline: none;
-  width: 100%;
   height: 50px;
+}
+
+.modal__input-group {
+  background-color: #FFFFFF;
+  width: 100%;
+  margin-bottom: 15px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border: none;
+  outline: none;
+  height: 50px;
+  position: relative;
 }
 
 .modal__input::-webkit-input-placeholder {
@@ -1994,7 +2049,7 @@ iframe {
           border-radius: 4px;
   border: none;
   outline: none;
-  margin-bottom: 13px;
+  margin-top: 13px;
   min-height: 123px;
   overflow-y: auto;
 }
@@ -2078,6 +2133,7 @@ iframe {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 15px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2648,7 +2704,7 @@ iframe {
     grid-column: 1;
     justify-self: flex-start;
   }
-  .footer__input {
+  .footer__input-group {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;

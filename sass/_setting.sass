@@ -25,3 +25,25 @@ img
   text-decoration: none
   color: $light
   padding: 10px 20px
+label.invalid
+  background-color: red
+  color: black
+  font-size: 10px
+  position: absolute
+  top: -25px
+  width: 100%
+  left: 0
+  border: 5px solid red
+  border-radius: 4px
+  &::before
+    content: ""
+    z-index: -1
+    position: absolute
+    bottom: -7px
+    background-color: red
+    width: 10px
+    height: 10px
+    transform: rotate(45deg)
+    left: 10px
+.newslatter__input.invalid
+  border: 5px solid red
