@@ -68,7 +68,7 @@ function closeModalEsc(e) {
   }
 }
 
-$(".phone_us").mask("+7 (000) 000-00-00");
+$(".phone-us").mask("+7 (000) 000-00-00");
 
 // $(".modal__form").validate({
 //   rules: {
