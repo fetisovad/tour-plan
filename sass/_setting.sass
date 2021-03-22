@@ -27,11 +27,10 @@ img
   padding: 10px 20px
 label.invalid
   background-color: red
-  color: black
-  font-size: 10px
+  color: white
+  font-size: 12px
   position: absolute
-  top: -25px
-  width: 100%
+  top: -18px
   left: 0
   border: 5px solid red
   border-radius: 4px
@@ -44,5 +43,11 @@ label.invalid
     height: 10px
     transform: rotate(45deg)
     left: 10px
-.newslatter__input.invalid
-  border: 5px solid red
+input.newslatter__input.invalid
+  // border: 5px solid red
+  &+label.invalid
+    top: 5px
+    left: 160px
+    border: 2px solid red
+    &::before
+      display: none
