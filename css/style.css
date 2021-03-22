@@ -383,8 +383,8 @@ label.invalid {
   color: white;
   font-size: 12px;
   position: absolute;
-  top: -18px;
-  left: 0;
+  top: -16px;
+  left: 3px;
   border: 5px solid red;
   -webkit-border-radius: 4px;
           border-radius: 4px;
@@ -404,13 +404,8 @@ label.invalid::before {
 }
 
 input.newslatter__input.invalid + label.invalid {
-  top: 5px;
-  left: 160px;
-  border: 2px solid red;
-}
-
-input.newslatter__input.invalid + label.invalid::before {
-  display: none;
+  top: -16px;
+  left: 12px;
 }
 
 .navbar {
@@ -1240,7 +1235,6 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  position: relative;
   width: 350px;
   min-height: 55px;
   -webkit-border-radius: 6px;
@@ -1257,6 +1251,8 @@ iframe {
   overflow: hidden;
   padding-right: 95px;
   padding-left: 33px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
 }
 
 .newslatter__input::-webkit-input-placeholder {
@@ -1302,6 +1298,11 @@ iframe {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  -webkit-border-top-right-radius: 4px;
+          border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+  overflow: hidden;
 }
 
 .subscribe {
@@ -1310,7 +1311,6 @@ iframe {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  overflow: hidden;
 }
 
 .reviews {
@@ -2053,7 +2053,6 @@ iframe {
           border-radius: 4px;
   border: none;
   outline: none;
-  margin-top: 13px;
   min-height: 123px;
   overflow-y: auto;
 }
