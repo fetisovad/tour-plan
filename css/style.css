@@ -350,6 +350,7 @@ body {
   background-color: #F5FAFE;
   font-family: 'Mulish', sans-serif;
   color: #333333;
+  overflow-x: hidden;
 }
 
 .container {
