@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css" />
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
@@ -256,7 +257,7 @@
       <div class="container">
         <h2 class="other-packages__title">Other Packages</h2>
         <div class="grid-wrapper">
-          <div class="grid-card">
+          <div class="grid-card" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
             <div class="grid-card__offer grid-card__offer--first">
               Flash Offer
             </div>
@@ -320,7 +321,7 @@
               </div>
             </div>
           </div>
-          <div class="grid-card">
+          <div class="grid-card" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
             <div class="grid-card__offer">Flash Offer</div>
 
             <img
@@ -368,7 +369,7 @@
               </div>
             </div>
           </div>
-          <div class="grid-card">
+          <div class="grid-card" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
             <div class="grid-card__offer">Flash Offer</div>
 
             <img
@@ -416,7 +417,7 @@
               </div>
             </div>
           </div>
-          <div class="grid-card">
+          <div class="grid-card" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             <div class="grid-card__offer">Flash Offer</div>
 
             <img
@@ -465,7 +466,7 @@
               </div>
             </div>
           </div>
-          <div class="grid-card">
+          <div class="grid-card" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
             <div class="grid-card__offer">Flash Offer</div>
 
             <img
@@ -643,7 +644,7 @@
       <div class="container">
         <h3 class="activities__title">Other Activities</h3>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="flip-up" data-aos-duration="600" data-aos-once="true">
             <img
               src="img/card-image-1.jpg"
               alt="The curious corner 
@@ -653,7 +654,7 @@
             <div class="card__title">The curious corner <br />of chamarel</div>
             <button class="card__button" data-modal>Book Now</button>
           </div>
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="flip-up" data-aos-duration="600" data-aos-once="true">
             <img
               src="img/card-image-2.jpg"
               alt="Gymkhana club golf
@@ -663,7 +664,7 @@
             <div class="card__title">Gymkhana club golf course</div>
             <button class="card__button" data-modal>Book Now</button>
           </div>
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="flip-up" data-aos-duration="600" data-aos-once="true">
             <img
               src="img/card-image-3.jpg"
               alt="Tamarind falls hiking
@@ -677,7 +678,7 @@
             </div>
             <button class="card__button" data-modal>Book Now</button>
           </div>
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="flip-up" data-aos-duration="600" data-aos-once="true">
             <img
               src="img/card-image-4.jpg"
               alt="The blue marine discovery
@@ -924,6 +925,13 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+      AOS.init({
+        disable: ['phone', 'tablet', 'mobile'],
+      });
+    </script>
   </body>
 </html>
