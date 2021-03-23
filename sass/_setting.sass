@@ -18,6 +18,14 @@ img
 .button
   border: none
   cursor: pointer
+  &--hover
+    &:hover
+      transform: scale(1.07)
+      transition: 0.2s
+    &:active
+      transform: scale(1)
+      transition: 0.2s
+      background-color: #cc1638
 .button-link
   background: #EC1F46
   border-radius: 4px
@@ -52,3 +60,5 @@ input.newslatter__input.invalid
   //   border: 2px solid minlength="2"red
   //   &::before
   //     display: none
+input
+  &:focus
