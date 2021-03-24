@@ -316,7 +316,7 @@
                     <div class="grid-card__old-price">$ 10,500</div>
                     <div class="grid-card__pricetag">$ 8,500</div>
                   </div>
-                  <button class="button grid-card__button">Book now</button>
+                  <button class="button grid-card__button" data-modal>Book now</button>
                 </div>
               </div>
             </div>
@@ -364,7 +364,7 @@
                     <div class="grid-card__old-price">$ 8,500</div>
                     <div class="grid-card__pricetag">$ 3,000</div>
                   </div>
-                  <button class="button grid-card__button">Book now</button>
+                  <button class="button grid-card__button" data-modal>Book now</button>
                 </div>
               </div>
             </div>
@@ -412,7 +412,7 @@
                     <div class="grid-card__old-price">$ 10,500</div>
                     <div class="grid-card__pricetag">$ 9,500</div>
                   </div>
-                  <button class="button grid-card__button">Book now</button>
+                  <button class="button grid-card__button" data-modal>Book now</button>
                 </div>
               </div>
             </div>
@@ -461,7 +461,7 @@
                     <div class="grid-card__old-price">$ 4,500</div>
                     <div class="grid-card__pricetag">$ 2,500</div>
                   </div>
-                  <button class="button grid-card__button">Book now</button>
+                  <button class="button grid-card__button" data-modal>Book now</button>
                 </div>
               </div>
             </div>
@@ -508,7 +508,7 @@
                     <div class="grid-card__old-price">$ 6,500</div>
                     <div class="grid-card__pricetag">$ 3,500</div>
                   </div>
-                  <button class="button grid-card__button">Book now</button>
+                  <button class="button grid-card__button" data-modal>Book now</button>
                 </div>
               </div>
             </div>
@@ -644,6 +644,7 @@
       <div class="container">
         <h3 class="activities__title">Other Activities</h3>
         <div class="activities-wrapper">
+
           <div class="card activities__card" data-aos="flip-up" data-aos-duration="600" data-aos-once="true">
             <img
               src="img/card-image-1.jpg"
@@ -653,6 +654,7 @@
             />
             <div class="card__title">The curious corner <br />of chamarel</div>
             <button class="card__button" data-modal>Book Now</button>
+            <div class="card__overlay"></div>
           </div>
           <div class="card activities__card" data-aos="flip-up" data-aos-duration="600" data-aos-once="true">
             <img
@@ -663,6 +665,7 @@
             />
             <div class="card__title">Gymkhana club golf course</div>
             <button class="card__button" data-modal>Book Now</button>
+            <div class="card__overlay"></div>
           </div>
           <div class="card activities__card" data-aos="flip-up" data-aos-duration="600" data-aos-once="true">
             <img
@@ -677,6 +680,8 @@
               Tamarind falls hiking <br />trip - full day
             </div>
             <button class="card__button" data-modal>Book Now</button>
+            <div class="card__overlay"></div>
+
           </div>
           <div class="card activities__card" data-aos="flip-up" data-aos-duration="600" data-aos-once="true">
             <img
@@ -687,6 +692,8 @@
             />
             <div class="card__title">The blue marine discovery quest</div>
             <button class="card__button" data-modal>Book Now</button>
+            <div class="card__overlay"></div>
+
           </div>
         </div>
       </div>
@@ -813,9 +820,10 @@
                     class="footer__icon"
                   />
                 </div>
-                Tel (business hours) : 269 1500<br />Tel (hotline) Monday -
-                Saturday: 52&#8209;56-61-38 (08:00 am – 20:00 pm)<br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div>Tel (business hours) : <a class="footer__link footer__link--tdu" href="tel:269 1500">269 1500</a><br />Tel (hotline) Monday -
+                  Saturday: <a class="footer__link footer__link--tdu" href="tel:52&#8209;56-61-38">52&#8209;56-61-38</a> (08:00 am – 20:00 pm)<br />
+                  Tel (hotline) Sunday: <a class="footer__link footer__link--tdu" href="tel:52-56-61-38">52-56-61-38</a> (08:00 am – 14:00 pm)</div>
+                
               </li>
               <li class="footer__item footer__item--mb-19">
                 <div class="footer__icon-wrapper">

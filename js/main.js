@@ -79,7 +79,7 @@ $(document).ready(function () {
           minlength: "At least 2 axle boxes",
         },
         email: {
-          required: "We need your email address to contact you",
+          required: "Enter your email address",
           email: "Use format of name@domain.com",
         },
         phone: {

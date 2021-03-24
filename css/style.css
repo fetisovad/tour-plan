@@ -1533,14 +1533,24 @@ iframe {
           align-items: flex-start;
   padding: 0 26px 24px;
   position: relative;
-  background: -webkit-linear-gradient(270.17deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
-  background: -o-linear-gradient(270.17deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
-  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
   -webkit-border-radius: 6px;
           border-radius: 6px;
   overflow: hidden;
   width: 255px;
   height: 255px;
+}
+
+.card__overlay {
+  background: -webkit-linear-gradient(270.17deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  background: -o-linear-gradient(270.17deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .card__image {
@@ -1662,8 +1672,7 @@ iframe {
 }
 
 .footer__link--tdu:hover {
-  text-decoration: underline;
-  color: blue;
+  border-bottom: 2px solid #ec1f46;
 }
 
 .footer__text {
@@ -3233,7 +3242,6 @@ iframe {
   }
   .modal__input {
     height: 30px;
-    width: 48%;
   }
   .modal__input--email {
     -webkit-box-ordinal-group: 1;
