@@ -1057,7 +1057,6 @@ iframe {
 
 .grid-card__description {
   padding: 30px 21px 25px 32px;
-  overflow-y: auto;
 }
 
 .grid-card__description--first {
@@ -1091,6 +1090,8 @@ iframe {
   font-size: 14px;
   line-height: 160.6%;
   margin: 0 0 46px 0;
+  overflow-y: auto;
+  height: 157px;
 }
 
 .grid-card__info {
@@ -2212,6 +2213,7 @@ iframe {
   }
   .grid-card__text {
     margin-bottom: 34px;
+    height: 200px;
   }
 }
 
@@ -2413,7 +2415,7 @@ iframe {
     padding: 35px 21px 35px 44px;
   }
   .grid-card__text {
-    margin: 0 0 46px 0;
+    margin: 0;
   }
 }
 
@@ -2778,6 +2780,8 @@ iframe {
   .grid-card__text {
     font-size: 13px;
     margin-bottom: 20px;
+    overflow-y: auto;
+    height: 160px;
   }
   .grid-card__icons-text--mb {
     margin-bottom: 15px;
@@ -2847,6 +2851,7 @@ iframe {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 625px;
   }
   .grid-card__img--size {
     width: 100%;
@@ -2861,6 +2866,9 @@ iframe {
     min-width: 95px;
     font-size: 12px;
     line-height: 15px;
+  }
+  .grid-card__text {
+    height: 70px;
   }
   .modal__window {
     padding: 33px;
@@ -3216,6 +3224,10 @@ iframe {
   }
   .modal__window {
     padding: 15px;
+  }
+  input.newslatter__input.invalid + label.invalid {
+    top: -16px;
+    left: 0px;
   }
 }
 

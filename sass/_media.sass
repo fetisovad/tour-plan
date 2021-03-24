@@ -25,6 +25,7 @@
           padding: 10px 21px 16px 45px
       &__text
         margin-bottom: 34px
+        height: 200px
 
 @media screen and ( max-width: 1070px )
   .container
@@ -148,7 +149,7 @@
         &--first
           padding: 35px 21px 35px 44px
       &__text
-        margin: 0 0 46px 0
+        margin: 0
 
 @media screen and ( max-width: 768px )
   .container, .newslatter-wrapper
@@ -357,6 +358,8 @@
       &__text
         font-size: 13px
         margin-bottom: 20px
+        overflow-y: auto
+        height: 160px
       &__icons
         &-text
           &--mb
@@ -403,6 +406,8 @@
       max-width: 100%
       &:first-child
         flex-direction: column
+        height: 625px
+
       &__img
         &--size
           width: 100%
@@ -416,6 +421,8 @@
         min-width: 95px
         font-size: 12px
         line-height: 15px
+      &__text
+        height: 70px
   .modal
     &__window
       padding: 33px
@@ -651,6 +658,10 @@
   .modal
     &__window
       padding: 15px
+  input.newslatter__input.invalid
+    &+label.invalid
+      top: -16px
+      left: 0px
 @media (max-height: 500px)
   .modal
     &__window
