@@ -93,4 +93,12 @@ $(document).ready(function () {
   AOS.init({
     disable: "mobile",
   });
+
+  const map = document.querySelector(".map-wrap");
+  map.addEventListener("mouseover", function () {
+    map.insertAdjacentHTML(
+      "afterBegin",
+      '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1223.4653431915197!2d55.13376898384139!3d25.07845799040722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f14aa4e136d0d%3A0x7fc04c4bbbd0db2!2sHilton%20Dubai%20Jumeirah!5e0!3m2!1sru!2sru!4v1615319539825!5m2!1sru!2sru" allowfullscreen="" aria-hidden="false" tabindex="0" class="map"></iframe>'
+    );
+  });
 });
