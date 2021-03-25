@@ -354,6 +354,10 @@
       grid-gap: 20px
     &-card
       height: 500px
+      &__wrapper
+        max-height: 122px
+        &--first
+          max-height: 316px
       &__img
         height: 200px
         &--size
@@ -383,8 +387,12 @@
       min-width: 402px
       min-height: 436px
       height: 436px
-      padding: 33px 50px
+      padding: 33px 50px 0
       z-index: 200
+      &:after
+        content: ''
+        display: block
+        padding-bottom: 33px
     &__overlay
       z-index: 150
     &__message
@@ -415,6 +423,10 @@
       &:first-child
         flex-direction: column
         height: 625px
+      &__wrapper
+        max-height: 123px
+        &--first
+          max-height: 226px
 
       &__img
         &--size
@@ -443,6 +455,11 @@
       min-width: 70%
       min-height: 436px
       padding: 33px 50px
+      padding-bottom: 0
+      &:after
+        content: ''
+        display: block
+        padding-bottom: 33px
     &__overlay
       z-index: 150
 
@@ -665,7 +682,11 @@
       max-width: 280px
   .modal
     &__window
-      padding: 15px
+      padding: 15px 15px 0
+      &:after
+        content: ''
+        display: block
+        padding-bottom: 15px
   input.newslatter__input.invalid
     &+label.invalid
       top: -16px
@@ -676,7 +697,11 @@
       min-height: 250px
       height: 300px
       overflow-y: auto
-      padding: 15px
+      padding: 15px 15px 0
+      &:after
+        content: ''
+        display: block
+        padding-bottom: 15px
     &__form
       flex-direction: row
       flex-wrap: wrap
